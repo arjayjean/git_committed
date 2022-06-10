@@ -33,6 +33,8 @@ while commited != True:
             filePath = Path(path)
             if filePath.suffix == '.py':
                 directory = filePath.stem
+            elif filePath.suffix == '.html':
+                directory = filePath.stem        
 
         initiation = [
         ['git', 'add', '.'],
